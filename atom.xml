@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://boxyao.github.io</id>
     <title>BoxYao</title>
-    <updated>2020-04-28T11:41:38.936Z</updated>
+    <updated>2020-04-28T12:12:03.744Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://boxyao.github.io"/>
     <link rel="self" href="https://boxyao.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://boxyao.github.io/post/ge-chong-ji-huo-han-shu-zong-jie/</id>
         <link href="https://boxyao.github.io/post/ge-chong-ji-huo-han-shu-zong-jie/">
         </link>
-        <updated>2020-04-29T05:05:14.000Z</updated>
+        <updated>2020-04-29T09:05:14.000Z</updated>
         <content type="html"><![CDATA[<h1 id="常用激活函数及其导数">常用激活函数及其导数</h1>
 <table>
 <thead>
@@ -34,13 +34,18 @@
 </tbody>
 </table>
 <h1 id="常用激活函数图像">常用激活函数图像</h1>
-<p>#为什么要用激活函数<br>
-激活函数主要的作用是提供网络的非线性建模能力，如果没有激活函数，神经网络只能表达线性映射，即便有再多的隐藏层，整个网络跟单层神经网络是等价的。<br>
+<h1 id="为什么要用激活函数">为什么要用激活函数</h1>
+<p>激活函数主要的作用是提供网络的非线性建模能力，如果没有激活函数，神经网络只能表达线性映射，即便有再多的隐藏层，整个网络跟单层神经网络是等价的，因为经过多层的加权计算，都可以展成一次的加权计算。<br>
 何为线性，何为非线性呢？ 线性在数学上可以理解为一阶导数为常数，非线性为一阶导数不为常数。<br>
-激活函数有以下性质：<br>
-。 非线性：<br>
-。 可微性：<br>
-。 单调性：</p>
+激活函数有以下性质：</p>
+<ul>
+<li>非线性： 首先,线性函数可以高效可靠对数据进行拟合, 但是现实生活中往往存在一些非线性的问题(如XOR), 这个时候, 我们就需要借助激活函数的非线性来对数据的分布进行重新映射, 从而获得更强大的拟合能力. (这个是最主要的原因, 其他还有下面这些性质也使得我们选择激活函数作为网络常用层)</li>
+<li>可微性：因为优化方法是基于梯度的，可微性有助于我们用梯度下降的方法优化网络</li>
+<li>单调性：当激活函数是单调的时候，能够保证单层网络是凸优化。</li>
+<li>输出值的范围：激活函数的输出值范围可以是有限的，也可以是无限的。当是有限的时候，基于梯度的优化方法会更加稳定，因为特征的表示受有限权值的影响更加显著；当输出值是无限的时候，模型的训练会更加高效，不过在这种情况下，一般需要更小的学习率。</li>
+</ul>
+<h2 id="更形象的解释">更形象的解释</h2>
+<p>https://www.zhihu.com/question/22334626</p>
 ]]></content>
     </entry>
     <entry>

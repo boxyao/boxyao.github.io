@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://boxyao.github.io</id>
     <title>BoxYao</title>
-    <updated>2020-04-29T08:51:03.749Z</updated>
+    <updated>2020-04-29T09:02:43.364Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://boxyao.github.io"/>
     <link rel="self" href="https://boxyao.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://boxyao.github.io/post/ge-chong-ji-huo-han-shu-zong-jie/</id>
         <link href="https://boxyao.github.io/post/ge-chong-ji-huo-han-shu-zong-jie/">
         </link>
-        <updated>2020-04-29T15:05:14.000Z</updated>
+        <updated>2020-04-29T17:05:14.000Z</updated>
         <content type="html"><![CDATA[<h1 id="常用激活函数及其导数">常用激活函数及其导数</h1>
 <table>
 <thead>
@@ -53,7 +53,7 @@
 <p>[Google] (https://www.zhihu.com/question/22334626 &quot;激活函数解释&quot;)</p>
 <h1 id="各个激活函数的比较和适用场景">各个激活函数的比较和适用场景</h1>
 <p>** 神经元饱和问题： **  当输入值很大或者很小时，激活函数的梯度值接近于0，在一定范围的输入梯度趋向于0，无论从深层网络传来何种梯度值，它向浅层网络中传过去的都是趋于0 的数，从而引发梯度消失的问题。<br>
-** zero-centered（0均值）**：如果激活函数的值域不是0均值，就会导致后一层的神经元接受的输入永远为正或者为负。以 sigmod为例： $$\frac{\partial L}{\partial w_{i} } = \frac{\partial L}{\partial f }\frac{\partial f}{\partial w_{i} } = \frac{\partial L}{\partial f } x_{i} f(x)(1-f(x)) $$</p>
+** zero-centered（0均值）**：如果激活函数的值域不是0均值，就会导致后一层的神经元接受的输入永远为正或者为负。以 sigmod为例： $$\frac{\partial L}{\partial w_{i} } = \frac{\partial L}{\partial f }\frac{\partial f}{\partial w_{i} } = \frac{\partial L}{\partial f } x_{i} f(x)(1-f(x)) $$，其中的$$ f(x)(1-f(x)) $$ 恒大于0， $$\frac{\partial L}{\partial f }$$为常数，所以$$x$$的符号固定，$$\frac{\partial L}{\partial w_{i} }$$的方向也就固定了，这样在训练时，所有weight的更新只会沿着一个方向更新（关于非0均值的问题，由于通常训练时是按batch训练的，每个batch会得到不同的信号，这在一定程度上可以缓解非0 均值的问题带来的影响，这也是ReLu虽然非0均值，但是却是主流激活函数的原因之一）。</p>
 ]]></content>
     </entry>
     <entry>

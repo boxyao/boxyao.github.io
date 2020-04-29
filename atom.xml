@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://boxyao.github.io</id>
     <title>BoxYao</title>
-    <updated>2020-04-29T09:31:40.784Z</updated>
+    <updated>2020-04-29T09:38:22.672Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://boxyao.github.io"/>
     <link rel="self" href="https://boxyao.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://boxyao.github.io/post/ge-chong-ji-huo-han-shu-zong-jie/</id>
         <link href="https://boxyao.github.io/post/ge-chong-ji-huo-han-shu-zong-jie/">
         </link>
-        <updated>2020-04-29T23:05:14.000Z</updated>
+        <updated>2020-04-30T01:05:14.000Z</updated>
         <content type="html"><![CDATA[<h1 id="常用激活函数及其导数">常用激活函数及其导数</h1>
 <table>
 <thead>
@@ -67,13 +67,13 @@
 <tr>
 <td style="text-align:center">Sigmoid</td>
 <td style="text-align:center">可以将数据值域压缩到[0,1]区间内</td>
-<td style="text-align:center">1.输入太大或太小，容易出现饱和2.输出的值域是非0均值的3.幂运算在计算机中消耗比较大</td>
+<td style="text-align:center">1.输入太大或太小，容易出现饱和 <br>2.输出的值域是非0均值的<br>3.幂运算在计算机中消耗比较大</td>
 <td style="text-align:center">在logistic回归中有重要地位</td>
 </tr>
 <tr>
 <td style="text-align:center">Tanh</td>
-<td style="text-align:center">1.zero-centered:可以将<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mo>−</mo><mi mathvariant="normal">∞</mi><mo separator="true">,</mo><mo>+</mo><mi mathvariant="normal">∞</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(-\infty,+\infty)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord">∞</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">+</span><span class="mord">∞</span><span class="mclose">)</span></span></span></span>的数据压缩到[-1,1]区间内2.完全可微分的，反对称,对称中心在原点。</td>
-<td style="text-align:center">1.神经元饱和问题，梯度消失仍然存在2.计算复杂</td>
+<td style="text-align:center"><br>1.zero-centered:可以将<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mo>(</mo><mo>−</mo><mi mathvariant="normal">∞</mi><mo separator="true">,</mo><mo>+</mo><mi mathvariant="normal">∞</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">(-\infty,+\infty)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">(</span><span class="mord">−</span><span class="mord">∞</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">+</span><span class="mord">∞</span><span class="mclose">)</span></span></span></span>的数据压缩到[-1,1]区间内<br>2.完全可微分的，反对称,对称中心在原点。</td>
+<td style="text-align:center"><br>1.神经元饱和问题，梯度消失仍然存在<br>2.计算复杂</td>
 <td style="text-align:center">在分类任务中，双曲正切函数(Tanh)逐渐取代Sigmoid函数作为标准的激活函数</td>
 </tr>
 </tbody>

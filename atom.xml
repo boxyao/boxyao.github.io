@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://boxyao.github.io</id>
     <title>BoxYao</title>
-    <updated>2020-04-29T09:02:43.364Z</updated>
+    <updated>2020-04-29T09:09:30.381Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://boxyao.github.io"/>
     <link rel="self" href="https://boxyao.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://boxyao.github.io/post/ge-chong-ji-huo-han-shu-zong-jie/</id>
         <link href="https://boxyao.github.io/post/ge-chong-ji-huo-han-shu-zong-jie/">
         </link>
-        <updated>2020-04-29T17:05:14.000Z</updated>
+        <updated>2020-04-29T19:05:14.000Z</updated>
         <content type="html"><![CDATA[<h1 id="常用激活函数及其导数">常用激活函数及其导数</h1>
 <table>
 <thead>
@@ -34,7 +34,7 @@
 <tr>
 <td style="text-align:center">Tanh</td>
 <td style="text-align:center">$$f(x) = \frac{e<sup>x-e</sup>{-x}}{e<sup>x+e</sup>{-x}}$$</td>
-<td style="text-align:center">$$f'(x) = 1-(f(z))^2$$</td>
+<td style="text-align:center">$$f'(x) = 1-(f(x))^2$$</td>
 </tr>
 </tbody>
 </table>
@@ -50,10 +50,13 @@
 <li>输出值的范围：激活函数的输出值范围可以是有限的，也可以是无限的。当是有限的时候，基于梯度的优化方法会更加稳定，因为特征的表示受有限权值的影响更加显著；当输出值是无限的时候，模型的训练会更加高效，不过在这种情况下，一般需要更小的学习率。</li>
 </ul>
 <h2 id="更形象的解释">更形象的解释</h2>
-<p>[Google] (https://www.zhihu.com/question/22334626 &quot;激活函数解释&quot;)</p>
+<p>[Google]  (https://www.zhihu.com/question/22334626 &quot;激活函数解释&quot;)</p>
 <h1 id="各个激活函数的比较和适用场景">各个激活函数的比较和适用场景</h1>
-<p>** 神经元饱和问题： **  当输入值很大或者很小时，激活函数的梯度值接近于0，在一定范围的输入梯度趋向于0，无论从深层网络传来何种梯度值，它向浅层网络中传过去的都是趋于0 的数，从而引发梯度消失的问题。<br>
-** zero-centered（0均值）**：如果激活函数的值域不是0均值，就会导致后一层的神经元接受的输入永远为正或者为负。以 sigmod为例： $$\frac{\partial L}{\partial w_{i} } = \frac{\partial L}{\partial f }\frac{\partial f}{\partial w_{i} } = \frac{\partial L}{\partial f } x_{i} f(x)(1-f(x)) $$，其中的$$ f(x)(1-f(x)) $$ 恒大于0， $$\frac{\partial L}{\partial f }$$为常数，所以$$x$$的符号固定，$$\frac{\partial L}{\partial w_{i} }$$的方向也就固定了，这样在训练时，所有weight的更新只会沿着一个方向更新（关于非0均值的问题，由于通常训练时是按batch训练的，每个batch会得到不同的信号，这在一定程度上可以缓解非0 均值的问题带来的影响，这也是ReLu虽然非0均值，但是却是主流激活函数的原因之一）。</p>
+<p>** 神经元饱和问题**  当输入值很大或者很小时，激活函数的梯度值接近于0，在一定范围的输入梯度趋向于0，无论从深层网络传来何种梯度值，它向浅层网络中传过去的都是趋于0 的数，从而引发梯度消失的问题。<br>
+** zero-centered（0均值）**：如果激活函数的值域不是0均值，就会导致后一层的神经元接受的输入永远为正或者为负。以 sigmod为例： $$\frac{\partial L}{\partial w_{i} } = \frac{\partial L}{\partial f }\frac{\partial f}{\partial w_{i} } = \frac{\partial L}{\partial f } x_{i} f(x)(1-f(x)) $$，其中的$$ f(x)(1-f(x)) $$ 恒大于0， $$\frac{\partial L}{\partial f }$$为常数，所以$$x$$的符号固定，$$\frac{\partial L}{\partial w_{i} }$$的方向也就固定了，这样在训练时，所有weight的更新只会沿着一个方向更新（关于非0均值的问题，由于通常训练时是按batch训练的，每个batch会得到不同的信号，这在一定程度上可以缓解非0 均值的问题带来的影响，这也是ReLu虽然非0均值，但是却是主流激活函数的原因之一）。<br>
+|激活函数|优势|劣势|适用场景|<br>
+|:---😐:---😐:---😐<br>
+|Sigmod|可以将数据值域压缩到[0,1]区间内|1.输入太大或太小，容易出现饱和2.输出的值域是非0均值的3.幂运算在计算机中消耗比较大|在logistic回归中有重要地位|</p>
 ]]></content>
     </entry>
     <entry>

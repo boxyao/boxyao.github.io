@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://boxyao.github.io</id>
     <title>BoxYao</title>
-    <updated>2020-04-30T08:56:15.662Z</updated>
+    <updated>2020-04-30T09:05:26.762Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://boxyao.github.io"/>
     <link rel="self" href="https://boxyao.github.io/atom.xml"/>
@@ -15,7 +15,7 @@
         <id>https://boxyao.github.io/post/ge-chong-ji-huo-han-shu-zong-jie/</id>
         <link href="https://boxyao.github.io/post/ge-chong-ji-huo-han-shu-zong-jie/">
         </link>
-        <updated>2020-04-30T07:05:14.000Z</updated>
+        <updated>2020-04-30T09:05:14.000Z</updated>
         <content type="html"><![CDATA[<h1 id="常用激活函数及其导数">常用激活函数及其导数</h1>
 <table>
 <thead>
@@ -162,7 +162,7 @@
 </p>
 <p>如果<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>x</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">x_{i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>为正数，<span class='katex-error' title='ParseError: KaTeX parse error: Undefined control sequence: \part at position 7: \frac{\̲p̲a̲r̲t̲ ̲L}{\part f}'>\frac{\part L}{\part f}</span>为正数，<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span>也为正数，在较大的学习率，,<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>b</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">b_{i}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>可能变为负数，下次前向传播为0，该神经元与下层网络之间就断开连接了，反向也断开了。</p>
 <p>产生原因：</p>
-<p>学习率(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span>)太大，糟糕的初始化，异常的输入导致($\frac{\part L}{\part f} $)非常大。</p>
+<p>学习率($$\alpha$$)太大，糟糕的初始化，异常的输入导致($$\frac{\part L}{\part f}$$)非常大。</p>
 <p>解决方法：</p>
 <p>1.采用较小的学习率</p>
 <p>2.采用momentum based 优化算法，动态调整学习率</p>
